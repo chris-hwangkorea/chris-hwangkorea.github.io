@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>작업 중인 프로젝트</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0e0e0e;
+      padding: 40px 32px;
+      color: #e2e2e2;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #f0f0f0;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 28px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 14px;
+      padding: 20px 22px;
+      border: 1px solid #2a2a2a;
+      transition: box-shadow 0.15s, transform 0.15s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      transform: translateY(-2px);
+      border-color: #3a3a3a;
+    }
+    .card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .icon {
+      font-size: 26px;
+      line-height: 1;
+    }
+    .name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #f0f0f0;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 99px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .badge-live { background: #0d2e1f; color: #34d399; }
+    .badge-dev  { background: #0c1f2e; color: #60a5fa; }
+    .path {
+      font-size: 11px;
+      color: #555;
+      font-family: "Consolas", monospace;
+      background: #111;
+      border-radius: 6px;
+      padding: 6px 10px;
+      word-break: break-all;
+      margin-bottom: 12px;
+      border: 1px solid #222;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 99px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .btn:hover { opacity: 0.75; }
+    .btn-primary   { background: #2ABCCE; color: #fff; }
+    .btn-secondary { background: #252525; color: #aaa; border: 1px solid #333; }
+    .updated {
+      font-size: 11px;
+      color: #444;
+      margin-top: 12px;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid #222;
+      margin: 24px 0 20px;
+    }
+    .footer {
+      font-size: 11px;
+      color: #333;
+      text-align: center;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🗂️ 작업 중인 프로젝트</h1>
+  <p class="subtitle">자동 생성 · 2026-05-22 · T-bot</p>
+
+  <div class="grid">
+
+    <!-- art-edu-gallery -->
+    <div class="card">
+      <div class="card-top">
+        <span class="icon">🎨</span>
+        <span class="name">art-edu-gallery <span class="badge badge-live">LIVE</span></span>
+      </div>
+      <div class="path">C:\Users\thinkpad\Desktop\art-edu-gallery</div>
+      <div class="links">
+        <a class="btn btn-primary" href="https://art-edu-gallery.vercel.app" target="_blank">
+          🌐 사이트 열기
+        </a>
+        <a class="btn btn-secondary" href="https://vercel.com/chris-hwangs-projects/art-edu-gallery" target="_blank">
+          ▲ Vercel
+        </a>
+      </div>
+      <p class="updated">아띠꼴레 아동 미술교육 갤러리 · Next.js + Cloudinary</p>
+      <div style="margin-top:12px; padding-top:12px; border-top:1px solid #222; display:flex; align-items:center; gap:8px;">
+        <span style="font-size:14px;">🖼️</span>
+        <span style="font-size:12px; color:#aaa; font-weight:600;">사진 보정 웹앱</span>
+        <span style="font-size:10px; color:#444;">· 동일 프로젝트 내 포함</span>
+      </div>
+    </div>
+
+    <!-- h-project-1 -->
+    <div class="card">
+      <div class="card-top">
+        <span class="icon">🎨</span>
+        <span class="name">H PROJECT-1 <span class="badge badge-dev">DEV</span></span>
+      </div>
+      <div class="path">C:\Users\thinkpad\Desktop\h-project-1</div>
+      <div class="links">
+        <a class="btn btn-secondary" href="http://localhost:3000" target="_blank">
+          🖥️ localhost:3000
+        </a>
+        <a class="btn btn-secondary" href="file:///C:/Users/thinkpad/Desktop/h-project-1" target="_blank">
+          📁 폴더 열기
+        </a>
+      </div>
+      <p class="updated">중국 미술교육 레퍼런스 사이트 · Goodman Gallery 스타일 · Next.js</p>
+    </div>
+
+    <!-- 주식 정보 -->
+    <div class="card">
+      <div class="card-top">
+        <span class="icon">📈</span>
+        <span class="name">주식 정보 <span class="badge badge-live">LIVE</span></span>
+      </div>
+      <div class="path">C:\Users\thinkpad\Desktop\주식 정보\stock-dashboard</div>
+      <div class="links">
+        <a class="btn btn-primary" href="https://stock-dashboard-taupe-rho.vercel.app" target="_blank">
+          🌐 사이트 열기
+        </a>
+        <a class="btn btn-secondary" href="file:///C:/Users/thinkpad/Desktop/주식 정보" target="_blank">
+          📁 폴더 열기
+        </a>
+      </div>
+      <p class="updated">주식 대시보드 · Next.js · 실제 시세 데이터</p>
+    </div>
+
+  </div>
+
+  <hr class="divider" />
+
+  <div class="footer">T-bot 자동 생성 · ttapp</div>
+
+</body>
+</html>
