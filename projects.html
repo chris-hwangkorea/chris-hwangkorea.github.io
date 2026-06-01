@@ -1,106 +1,100 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>작업 중인 프로젝트</title>
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; background: #0e0e0e; padding: 40px 32px; color: #e2e2e2; }
-h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; color: #f0f0f0; }
-.subtitle { font-size: 13px; color: #555; margin-bottom: 28px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
-.card { background: #1a1a1a; border-radius: 14px; padding: 20px 22px; border: 1px solid #2a2a2a; transition: box-shadow 0.15s, transform 0.15s; }
-.card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.4); transform: translateY(-2px); border-color: #3a3a3a; }
-.card-top { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }
-.icon-art { background: #1a2e1a; color: #4ade80; }
-.icon-book { background: #1a1a2e; color: #818cf8; }
-.icon-chart { background: #1a2a1a; color: #34d399; }
-.icon-dev { background: #1e1a2e; color: #a78bfa; }
-.name { font-size: 16px; font-weight: 700; color: #f0f0f0; }
-.badge { display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 99px; margin-left: 6px; vertical-align: middle; }
-.badge-live { background: #0d2e1f; color: #34d399; }
-.badge-dev { background: #0c1f2e; color: #60a5fa; }
-.path { font-size: 11px; color: #555; font-family: Consolas, monospace; background: #111; border-radius: 6px; padding: 6px 10px; word-break: break-all; margin-bottom: 12px; border: 1px solid #222; }
-.links { display: flex; flex-wrap: wrap; gap: 8px; }
-.btn { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 99px; text-decoration: none; transition: opacity 0.15s; }
-.btn:hover { opacity: 0.75; }
-.btn-primary { background: #2ABCCE; color: #fff; }
-.btn-secondary { background: #252525; color: #aaa; border: 1px solid #333; }
-.updated { font-size: 11px; color: #444; margin-top: 12px; }
-.sub-item { margin-top: 12px; padding-top: 12px; border-top: 1px solid #222; display: flex; align-items: center; gap: 8px; }
-.divider { border: none; border-top: 1px solid #222; margin: 24px 0 20px; }
-.footer { font-size: 11px; color: #333; text-align: center; margin-top: 32px; }
-</style>
+<style>* { box-sizing: border-box; margin: 0; padding: 0; }body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; background: #0e0e0e; padding: 40px 32px; color: #e2e2e2; }h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; color: #f0f0f0; }.subtitle { font-size: 13px; color: #555; margin-bottom: 28px; }.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }.card { background: #1a1a1a; border-radius: 14px; padding: 20px 22px; border: 1px solid #2a2a2a; transition: box-shadow 0.15s, transform 0.15s; }.card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.4); transform: translateY(-2px); border-color: #3a3a3a; }.card-top { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }.icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }.icon-art { background: #1a2e1a; color: #4ade80; }.icon-book { background: #1a1a2e; color: #818cf8; }.icon-chart { background: #1a2a1a; color: #34d399; }.icon-dev { background: #1e1a2e; color: #a78bfa; }.name { font-size: 16px; font-weight: 700; color: #f0f0f0; }.badge { display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 99px; margin-left: 6px; vertical-align: middle; }.badge-live { background: #0d2e1f; color: #34d399; }.badge-dev { background: #0c1f2e; color: #60a5fa; }.path { font-size: 11px; color: #555; font-family: Consolas, monospace; background: #111; border-radius: 6px; padding: 6px 10px; word-break: break-all; margin-bottom: 12px; border: 1px solid #222; }.links { display: flex; flex-wrap: wrap; gap: 8px; }.btn { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 99px; text-decoration: none; transition: opacity 0.15s; }.btn:hover { opacity: 0.75; }.btn-primary { background: #2ABCCE; color: #fff; }.btn-secondary { background: #252525; color: #aaa; border: 1px solid #333; }.updated { font-size: 11px; color: #444; margin-top: 12px; }.sub-item { margin-top: 12px; padding-top: 12px; border-top: 1px solid #222; display: flex; align-items: center; gap: 8px; }.divider { border: none; border-top: 1px solid #222; margin: 24px 0 20px; }.footer { font-size: 11px; color: #333; text-align: center; margin-top: 32px; }</style>
 </head>
 <body>
 <h1>작업 중인 프로젝트</h1>
 <p class="subtitle">2026-06-01 · T-bot</p>
-<div class="grid">
+<div class="grid"><div class="card"><div class="card-top"><div class="icon icon-art">A</div><span class="name">art-edu-gallery <span class="badge badge-live">LIVE</span></span></div><div class="path">C:\Users\thinkpad\Desktop\art-edu-gallery</div><div class="links"><a class="btn btn-primary" href="https://art-edu-gallery.vercel.app" target="_blank">사이트 열기</a><a class="btn btn-secondary" href="https://vercel.com/chris-hwangs-projects/art-edu-gallery" target="_blank">Vercel</a></div><p class="updated">아띠꼴레 아동 미술교육 갤러리 · Next.js + Cloudinary</p><div class="sub-item"><span style="font-size:12px;color:#aaa;font-weight:600;">사진 보정 웹앱 · 동일 프로젝트 내 포함</span></div></div>
+<div class="card"><div class="card-top"><div class="icon icon-book">B</div><span class="name">전자책 라이브러리 <span class="badge badge-live">LIVE</span></span></div><div class="path">chris-hwangkorea.github.io/ebook_library.html</div><div class="links"><a class="btn btn-primary" href="https://chris-hwangkorea.github.io/ebook_library.html" target="_blank">라이브러리 열기</a></div><p class="updated">전자책 라이브러리 · GitHub Pages</p></div>
+<div class="card"><div class="card-top"><div class="icon icon-art">H1</div><span class="name">H PROJECT-1 <span class="badge badge-live">LIVE</span></span></div><div class="path">C:\Users\thinkpad\Desktop\h-project-1</div><div class="links"><a class="btn btn-primary" href="https://h-project-1.vercel.app" target="_blank">사이트 열기</a><a class="btn btn-secondary" href="https://vercel.com/chris-hwangs-projects/h-project-1" target="_blank">Vercel</a></div><p class="updated">중국 미술교육 레퍼런스 사이트 · Goodman Gallery 스타일 · Next.js</p></div>
+<div class="card"><div class="card-top"><div class="icon icon-chart">S</div><span class="name">주식 정보 <span class="badge badge-live">LIVE</span></span></div><div class="path">C:\Users\thinkpad\Desktop\주식 정보\stock-dashboard</div><div class="links"><a class="btn btn-primary" href="https://stock-dashboard-taupe-rho.vercel.app" target="_blank">사이트 열기</a></div><p class="updated">주식 대시보드 · Next.js · 실제 시세 데이터</p></div>
+<div class="card"><div class="card-top"><div class="icon icon-dev">H2</div><span class="name">H PROJECT-2 <span class="badge badge-dev">DEV</span></span></div><div class="path">D:\PROJECT\H PROJECT-2</div><div class="links"><a class="btn btn-secondary" href="http://localhost:3000" target="_blank">localhost:3000</a></div><p class="updated">로컬 개발 중</p></div>
+<div class="card"><div class="card-top"><div class="icon icon-dev">H2.1</div><span class="name">H PROJECT-2.1 <span class="badge badge-dev">DEV</span></span></div><div class="path">D:\PROJECT\H PROJECT-2.1</div><div class="links"><a class="btn btn-secondary" href="http://localhost:3000" target="_blank">localhost:3000</a></div><p class="updated">로컬 개발 중</p></div>
+<div class="card"><div class="card-top"><div class="icon icon-dev">AI</div><span class="name">ai-fuel-gauge <span class="badge badge-dev">DEV</span></span></div><div class="path">D:\project\ai-fuel-gauge</div><div class="links"><a class="btn btn-secondary" href="http://localhost:3000" target="_blank">localhost:3000</a></div><p class="updated">로컬 개발 중</p></div>
+    <!-- ai-fuel-gauge -->
+    <div class="card">
+      <div class="card-top">
+        <span class="icon">?뱚</span>
+        <span class="name">ai-fuel-gauge <span class="badge badge-dev">DEV</span></span>
+      </div>
+      <div class="path">D:\project\ai-fuel-gauge</div>
+      <div class="links">
+        <a class="btn btn-secondary" href="http://localhost:3000" target="_blank">
+          ?뼢截?localhost:3000
+        </a>
+      </div>
+      <p class="updated">?먮룞 媛먯? 異붽?</p>
+    </div>
+    <!-- art-edu-gallery -->
+    <div class="card">
+      <div class="card-top">
+        <span class="icon">?뱚</span>
+        <span class="name">art-edu-gallery <span class="badge badge-live">LIVE</span></span>
+      </div>
+      <div class="path">D:\project\art-edu-gallery</div>
+      <div class="links">
+        <a class="btn btn-primary" href="https://art-edu-gallery.vercel.app" target="_blank">
+          ?뙋 ?ъ씠???닿린
+        </a>
+        <a class="btn btn-secondary" href="https://vercel.com/chris-hwangs-projects/art-edu-gallery" target="_blank">
+          ??Vercel
+        </a>
+      </div>
+      <p class="updated">?먮룞 媛먯? 異붽?</p>
+    </div>
+    <!-- H PROJECT-2 -->
+    <div class="card">
+      <div class="card-top">
+        <span class="icon">?뱚</span>
+        <span class="name">H PROJECT-2 <span class="badge badge-dev">DEV</span></span>
+      </div>
+      <div class="path">D:\project\H PROJECT-2</div>
+      <div class="links">
+        <a class="btn btn-secondary" href="http://localhost:3000" target="_blank">
+          ?뼢截?localhost:3000
+        </a>
+      </div>
+      <p class="updated">?먮룞 媛먯? 異붽?</p>
+    </div>
+    <!-- h-project-1 -->
+    <div class="card">
+      <div class="card-top">
+        <span class="icon">?뱚</span>
+        <span class="name">h-project-1 <span class="badge badge-live">LIVE</span></span>
+      </div>
+      <div class="path">D:\project\h-project-1</div>
+      <div class="links">
+        <a class="btn btn-primary" href="https://h-project-1.vercel.app" target="_blank">
+          ?뙋 ?ъ씠???닿린
+        </a>
+        <a class="btn btn-secondary" href="https://vercel.com/chris-hwangs-projects/h-project-1" target="_blank">
+          ??Vercel
+        </a>
+      </div>
+      <p class="updated">?먮룞 媛먯? 異붽?</p>
+    </div>
+    <!-- 주식 정보 -->
+    <div class="card">
+      <div class="card-top">
+        <span class="icon">?뱚</span>
+        <span class="name">주식 정보 <span class="badge badge-dev">DEV</span></span>
+      </div>
+      <div class="path">D:\project\주식 정보</div>
+      <div class="links">
+        <a class="btn btn-secondary" href="http://localhost:3000" target="_blank">
+          ?뼢截?localhost:3000
+        </a>
+      </div>
+      <p class="updated">?먮룞 媛먯? 異붽?</p>
+    </div>
 
-<!-- art-edu-gallery -->
-<div class="card">
-  <div class="card-top"><div class="icon icon-art">A</div><span class="name">art-edu-gallery <span class="badge badge-live">LIVE</span></span></div>
-  <div class="path">D:\PROJECT\art-edu-gallery</div>
-  <div class="links">
-    <a class="btn btn-primary" href="https://art-edu-gallery.vercel.app" target="_blank">사이트 열기</a>
-    <a class="btn btn-secondary" href="https://vercel.com/chris-hwangs-projects/art-edu-gallery" target="_blank">Vercel</a>
-  </div>
-  <p class="updated">아띠꼴레 아동 미술교육 갤러리 · Next.js + Cloudinary</p>
-</div>
 
-<!-- ebook-library -->
-<div class="card">
-  <div class="card-top"><div class="icon icon-book">B</div><span class="name">전자책 라이브러리 <span class="badge badge-live">LIVE</span></span></div>
-  <div class="path">D:\PROJECT\github-pages\ebook_library.html</div>
-  <div class="links">
-    <a class="btn btn-primary" href="https://chris-hwangkorea.github.io/ebook_library.html" target="_blank">라이브러리 열기</a>
-  </div>
-  <p class="updated">전자책 라이브러리 · GitHub Pages</p>
-</div>
 
-<!-- h-project-1 -->
-<div class="card">
-  <div class="card-top"><div class="icon icon-art">H1</div><span class="name">H PROJECT-1 <span class="badge badge-live">LIVE</span></span></div>
-  <div class="path">D:\PROJECT\h-project-1</div>
-  <div class="links">
-    <a class="btn btn-primary" href="https://h-project-1.vercel.app" target="_blank">사이트 열기</a>
-    <a class="btn btn-secondary" href="https://vercel.com/chris-hwangs-projects/h-project-1" target="_blank">Vercel</a>
-  </div>
-  <p class="updated">중국 미술교육 레퍼런스 사이트 · Goodman Gallery 스타일 · Next.js</p>
-</div>
-
-<!-- 주식 정보 -->
-<div class="card">
-  <div class="card-top"><div class="icon icon-chart">S</div><span class="name">주식 정보 <span class="badge badge-live">LIVE</span></span></div>
-  <div class="path">D:\PROJECT\주식 정보\stock-dashboard</div>
-  <div class="links">
-    <a class="btn btn-primary" href="https://stock-dashboard-taupe-rho.vercel.app" target="_blank">사이트 열기</a>
-    <a class="btn btn-secondary" href="https://vercel.com/chris-hwangs-projects/stock-dashboard" target="_blank">Vercel</a>
-  </div>
-  <p class="updated">주식 대시보드 · Next.js · 실제 시세 데이터</p>
-</div>
-
-<!-- H PROJECT-2 -->
-<div class="card">
-  <div class="card-top"><div class="icon icon-dev">H2</div><span class="name">H PROJECT-2 <span class="badge badge-dev">DEV</span></span></div>
-  <div class="path">D:\PROJECT\H PROJECT-2</div>
-  <div class="links">
-    <a class="btn btn-secondary" href="http://localhost:3000" target="_blank">localhost:3000</a>
-  </div>
-  <p class="updated">Articolle 아동 미술교육 · Next.js + TypeScript</p>
-</div>
-
-<!-- ai-fuel-gauge -->
-<div class="card">
-  <div class="card-top"><div class="icon icon-dev">AI</div><span class="name">ai-fuel-gauge <span class="badge badge-dev">DEV</span></span></div>
-  <div class="path">D:\PROJECT\ai-fuel-gauge</div>
-  <div class="links">
-    <a class="btn btn-secondary" href="http://localhost:4173" target="_blank">localhost:4173</a>
-  </div>
-  <p class="updated">AI 사용량 시각화 도구</p>
-</div>
 
 </div>
 <hr class="divider" />
