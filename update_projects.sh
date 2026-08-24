@@ -6,6 +6,8 @@ cd "$REPO_DIR"
 
 python3 generate_projects.py
 python3 -m unittest discover -s tests -v
+cp projects.html /Users/chrismacbookair/Desktop/projects.html
+echo "바탕화면 projects.html도 같은 내용으로 갱신했습니다."
 
 git add projects.html projects.json generate_projects.py update_projects.sh tests/test_generate_projects.py
 if git diff --cached --quiet; then
