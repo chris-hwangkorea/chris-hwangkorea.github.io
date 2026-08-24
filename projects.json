@@ -2,18 +2,15 @@
   "title": "작업 중인 프로젝트",
   "owner": "Chris · Mac",
   "ignored": [
+    "202608서울워크샵 강연자료",
     "Workflow",
     "chris-hwangkorea.github.io",
+    "lotto apk",
+    "normal",
     "open-notebook",
     "templates"
   ],
   "projects": [
-    {
-      "folder": "202608서울워크샵 강연자료",
-      "name": "서울 워크숍 강연자료",
-      "description": "2026년 8월 서울 미술교육 워크숍 강연자료",
-      "status": "DEV"
-    },
     {
       "folder": "art-edu-gallery",
       "name": "art-edu-gallery",
@@ -32,12 +29,6 @@
       "links": [
         {"label": "라이브러리", "url": "https://chris-hwangkorea.github.io/ebook_library.html", "primary": true}
       ]
-    },
-    {
-      "folder": "lotto apk",
-      "name": "lotto apk",
-      "description": "로또 번호 디자이너 Android 앱",
-      "status": "DEV"
     },
     {
       "folder": "mini-zine-maker",
