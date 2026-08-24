@@ -4,6 +4,7 @@
   "ignored": [
     "Workflow",
     "chris-hwangkorea.github.io",
+    "open-notebook",
     "templates"
   ],
   "projects": [
@@ -46,12 +47,6 @@
       "links": [
         {"label": "사이트", "url": "https://mini-zine-maker.vercel.app", "primary": true}
       ]
-    },
-    {
-      "folder": "open-notebook",
-      "name": "open-notebook",
-      "description": "오픈소스 AI 노트 앱",
-      "status": "DEV"
     },
     {
       "folder": "word play",
