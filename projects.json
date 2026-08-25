@@ -40,6 +40,15 @@
       ]
     },
     {
+      "folder": "seoul-workshop-app",
+      "name": "Seoul Visual Workshop",
+      "description": "중국 선생님 대상 사진·영상 촬영 미션 카드 웹앱",
+      "status": "LIVE",
+      "links": [
+        {"label": "미션 시작", "url": "https://seoul-workshop-app.vercel.app", "primary": true}
+      ]
+    },
+    {
       "folder": "word play",
       "name": "word play",
       "description": "사진으로 단어를 배우는 개인용 언어학습 PWA",
