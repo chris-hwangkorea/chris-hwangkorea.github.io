@@ -21,9 +21,9 @@
         {
           "label": "테마",
           "links": [
-            {"label": "오리지널", "url": "https://art-edu-gallery-v2.vercel.app/", "primary": true},
+            {"label": "테마01 오리지널", "url": "https://art-edu-gallery-v2.vercel.app/", "primary": true},
             {"label": "테마02 (빨간)", "url": "https://art-edu-gallery-v2.vercel.app/theme02"},
-            {"label": "뮤지엄 Theme03", "url": "https://art-edu-gallery-v2.vercel.app/v2"},
+            {"label": "테마03 뮤지엄", "url": "https://art-edu-gallery-v2.vercel.app/v2"},
             {"label": "테마04 갤러리", "url": "https://art-edu-gallery-v2.vercel.app/theme04"}
           ]
         },
