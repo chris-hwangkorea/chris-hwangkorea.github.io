@@ -53,6 +53,27 @@ class GenerateProjectsTest(unittest.TestCase):
         self.assertIn('href="https://example.com"', html)
         self.assertIn("Example app", html)
 
+    def test_renders_separate_link_groups(self):
+        config = {"projects": []}
+        projects = [{
+            "folder": "gallery",
+            "name": "Gallery",
+            "description": "Themes",
+            "status": "LIVE",
+            "links": [],
+            "linkGroups": [
+                {"label": "테마", "links": [{"label": "오리지널", "url": "https://example.com/"}]},
+                {"label": "관리자 도구", "links": [{"label": "업로드", "url": "https://example.com/admin"}]},
+            ],
+        }]
+
+        page = render_page(config, projects, "2026-08-27")
+
+        self.assertIn('<h3>테마</h3>', page)
+        self.assertIn('<h3>관리자 도구</h3>', page)
+        self.assertIn('>오리지널</a>', page)
+        self.assertIn('>업로드</a>', page)
+
 
 if __name__ == "__main__":
     unittest.main()

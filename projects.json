@@ -17,8 +17,27 @@
       "description": "아띠꼴레 아동 미술교육 갤러리",
       "status": "LIVE",
       "links": [
-        {"label": "사이트", "url": "https://art-edu-gallery-v2.vercel.app", "primary": true},
-        {"label": "사진 보정", "url": "https://art-edu-gallery-v2.vercel.app/admin/enhance"}
+        {"label": "메인", "url": "https://art-edu-gallery-v2.vercel.app", "primary": true}
+      ],
+      "linkGroups": [
+        {
+          "label": "테마",
+          "links": [
+            {"label": "오리지널", "url": "https://art-edu-gallery-v2.vercel.app/", "primary": true},
+            {"label": "테마02 (빨간)", "url": "https://art-edu-gallery-v2.vercel.app/theme02"},
+            {"label": "뮤지엄 Theme03", "url": "https://art-edu-gallery-v2.vercel.app/v2"},
+            {"label": "테마04 갤러리", "url": "https://art-edu-gallery-v2.vercel.app/theme04"}
+          ]
+        },
+        {
+          "label": "관리자 도구",
+          "links": [
+            {"label": "테마02 업로드", "url": "https://art-edu-gallery-v2.vercel.app/admin/upload/theme02"},
+            {"label": "뮤지엄 업로드", "url": "https://art-edu-gallery-v2.vercel.app/admin/upload/museum"},
+            {"label": "테마04 업로드", "url": "https://art-edu-gallery-v2.vercel.app/admin/upload"},
+            {"label": "오리지널 사진보정", "url": "https://art-edu-gallery-v2.vercel.app/admin/enhance"}
+          ]
+        }
       ]
     },
     {

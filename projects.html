@@ -24,6 +24,10 @@ h2 { min-width: 0; margin: 0; overflow-wrap: anywhere; font-size: 16px; letter-s
 .description { min-height: 38px; margin: 14px 0 10px; color: #b9c0c5; font-size: 13px; line-height: 1.45; }
 .path { margin: 0 0 14px; color: #6f7880; font-family: ui-monospace, monospace; font-size: 10px; overflow-wrap: anywhere; }
 .links { display: flex; flex-wrap: wrap; gap: 7px; min-height: 30px; align-items: center; }
+.link-groups { display: grid; gap: 13px; margin-top: 13px; }
+.link-group { padding-top: 12px; border-top: 1px solid #2b2f33; }
+.link-group h3 { margin: 0 0 8px; color: #8c959d; font-size: 10px; font-weight: 800; letter-spacing: 0; }
+.link-group .links { min-height: 0; }
 .button { padding: 7px 11px; border: 1px solid #3a4045; border-radius: 6px; color: #cbd1d5; text-decoration: none; font-size: 12px; font-weight: 650; }
 .button.primary { border-color: #2abccc; background: #2abccc; color: #071619; }
 .no-link { color: #69727a; font-size: 11px; }
@@ -32,43 +36,49 @@ footer { margin-top: 24px; color: #646d74; text-align: center; font-size: 11px; 
 </style>
 </head>
 <body><main>
-<header><h1>작업 중인 프로젝트</h1><p class="updated">2026-08-25 업데이트</p></header>
+<header><h1>작업 중인 프로젝트</h1><p class="updated">2026-08-27 업데이트</p></header>
 <section class="grid"><article class="card">
   <div class="card-head"><span class="initial">A</span>
     <h2>art-edu-gallery</h2><span class="status live">LIVE</span></div>
   <p class="description">아띠꼴레 아동 미술교육 갤러리</p>
   <p class="path">~/Desktop/projects/art-edu-gallery</p>
-  <div class="links"><a class="button primary" href="https://art-edu-gallery-v2.vercel.app" target="_blank" rel="noopener">사이트</a><a class="button" href="https://art-edu-gallery-v2.vercel.app/admin/enhance" target="_blank" rel="noopener">사진 보정</a></div>
+  <div class="links"><a class="button primary" href="https://art-edu-gallery-v2.vercel.app" target="_blank" rel="noopener">메인</a></div>
+  <div class="link-groups"><section class="link-group"><h3>테마</h3><div class="links"><a class="button primary" href="https://art-edu-gallery-v2.vercel.app/" target="_blank" rel="noopener">오리지널</a><a class="button" href="https://art-edu-gallery-v2.vercel.app/theme02" target="_blank" rel="noopener">테마02 (빨간)</a><a class="button" href="https://art-edu-gallery-v2.vercel.app/v2" target="_blank" rel="noopener">뮤지엄 Theme03</a><a class="button" href="https://art-edu-gallery-v2.vercel.app/theme04" target="_blank" rel="noopener">테마04 갤러리</a></div></section><section class="link-group"><h3>관리자 도구</h3><div class="links"><a class="button" href="https://art-edu-gallery-v2.vercel.app/admin/upload/theme02" target="_blank" rel="noopener">테마02 업로드</a><a class="button" href="https://art-edu-gallery-v2.vercel.app/admin/upload/museum" target="_blank" rel="noopener">뮤지엄 업로드</a><a class="button" href="https://art-edu-gallery-v2.vercel.app/admin/upload" target="_blank" rel="noopener">테마04 업로드</a><a class="button" href="https://art-edu-gallery-v2.vercel.app/admin/enhance" target="_blank" rel="noopener">오리지널 사진보정</a></div></section></div>
 </article><article class="card">
   <div class="card-head"><span class="initial">전</span>
     <h2>전자책 라이브러리</h2><span class="status live">LIVE</span></div>
   <p class="description">전자책 목록과 파일을 관리하는 개인 라이브러리</p>
   <p class="path">~/Desktop/projects/chris-hwangkorea.github.io</p>
   <div class="links"><a class="button primary" href="https://chris-hwangkorea.github.io/ebook_library.html" target="_blank" rel="noopener">라이브러리</a></div>
+  <div class="link-groups"></div>
 </article><article class="card">
   <div class="card-head"><span class="initial">M</span>
     <h2>mini-zine-maker</h2><span class="status live">LIVE</span></div>
   <p class="description">8페이지 미니북 제작 웹앱</p>
   <p class="path">~/Desktop/projects/mini-zine-maker</p>
   <div class="links"><a class="button primary" href="https://mini-zine-maker.vercel.app" target="_blank" rel="noopener">사이트</a></div>
+  <div class="link-groups"></div>
 </article><article class="card">
   <div class="card-head"><span class="initial">서</span>
     <h2>서울워크샵미션카드</h2><span class="status live">LIVE</span></div>
   <p class="description">중국 선생님 대상 사진·영상 촬영 미션 카드 웹앱</p>
   <p class="path">~/Desktop/projects/seoul-workshop-app</p>
   <div class="links"><a class="button primary" href="https://seoul-workshop-app.vercel.app" target="_blank" rel="noopener">미션 시작</a></div>
+  <div class="link-groups"></div>
 </article><article class="card">
   <div class="card-head"><span class="initial">W</span>
     <h2>word play</h2><span class="status live">LIVE</span></div>
   <p class="description">사진으로 단어를 배우는 개인용 언어학습 PWA</p>
   <p class="path">~/Desktop/projects/word play</p>
   <div class="links"><a class="button primary" href="https://capwords-clone.vercel.app" target="_blank" rel="noopener">사이트</a></div>
+  <div class="link-groups"></div>
 </article><article class="card">
   <div class="card-head"><span class="initial">주</span>
     <h2>주식 정보</h2><span class="status live">LIVE</span></div>
   <p class="description">실시간 시세와 보유 종목을 관리하는 주식 대시보드</p>
   <p class="path">~/Desktop/projects/주식-정보</p>
   <div class="links"><a class="button primary" href="https://stock-dashboard-taupe-rho.vercel.app" target="_blank" rel="noopener">사이트</a></div>
+  <div class="link-groups"></div>
 </article></section>
 <footer>Chris · Mac · 자동 생성</footer>
 </main></body>

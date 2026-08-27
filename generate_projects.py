@@ -44,6 +44,18 @@ def render_links(links):
     return "".join(output)
 
 
+def render_link_groups(groups):
+    output = []
+    for group in groups:
+        output.append(
+            '<section class="link-group">'
+            f'<h3>{html.escape(group["label"])}</h3>'
+            f'<div class="links">{render_links(group.get("links", []))}</div>'
+            '</section>'
+        )
+    return "".join(output)
+
+
 def render_page(config, projects, updated):
     cards = []
     for project in projects:
@@ -54,6 +66,7 @@ def render_page(config, projects, updated):
   <p class="description">{html.escape(project["description"])}</p>
   <p class="path">~/Desktop/projects/{html.escape(project["folder"])}</p>
   <div class="links">{render_links(project.get("links", []))}</div>
+  <div class="link-groups">{render_link_groups(project.get("linkGroups", []))}</div>
 </article>''')
 
     title = html.escape(config.get("title", "작업 중인 프로젝트"))
@@ -84,6 +97,10 @@ h2 {{ min-width: 0; margin: 0; overflow-wrap: anywhere; font-size: 16px; letter-
 .description {{ min-height: 38px; margin: 14px 0 10px; color: #b9c0c5; font-size: 13px; line-height: 1.45; }}
 .path {{ margin: 0 0 14px; color: #6f7880; font-family: ui-monospace, monospace; font-size: 10px; overflow-wrap: anywhere; }}
 .links {{ display: flex; flex-wrap: wrap; gap: 7px; min-height: 30px; align-items: center; }}
+.link-groups {{ display: grid; gap: 13px; margin-top: 13px; }}
+.link-group {{ padding-top: 12px; border-top: 1px solid #2b2f33; }}
+.link-group h3 {{ margin: 0 0 8px; color: #8c959d; font-size: 10px; font-weight: 800; letter-spacing: 0; }}
+.link-group .links {{ min-height: 0; }}
 .button {{ padding: 7px 11px; border: 1px solid #3a4045; border-radius: 6px; color: #cbd1d5; text-decoration: none; font-size: 12px; font-weight: 650; }}
 .button.primary {{ border-color: #2abccc; background: #2abccc; color: #071619; }}
 .no-link {{ color: #69727a; font-size: 11px; }}
