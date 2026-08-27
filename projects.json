@@ -16,9 +16,7 @@
       "name": "art-edu-gallery",
       "description": "아띠꼴레 아동 미술교육 갤러리",
       "status": "LIVE",
-      "links": [
-        {"label": "메인", "url": "https://art-edu-gallery-v2.vercel.app", "primary": true}
-      ],
+      "links": [],
       "linkGroups": [
         {
           "label": "테마",

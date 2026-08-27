@@ -73,6 +73,25 @@ class GenerateProjectsTest(unittest.TestCase):
         self.assertIn('<h3>관리자 도구</h3>', page)
         self.assertIn('>오리지널</a>', page)
         self.assertIn('>업로드</a>', page)
+        self.assertNotIn("로컬 프로젝트", page)
+
+    def test_does_not_duplicate_group_url_as_primary_link(self):
+        config = {"projects": []}
+        projects = [{
+            "folder": "gallery",
+            "name": "Gallery",
+            "description": "Themes",
+            "status": "LIVE",
+            "links": [],
+            "linkGroups": [{
+                "label": "테마",
+                "links": [{"label": "오리지널", "url": "https://example.com/"}],
+            }],
+        }]
+
+        page = render_page(config, projects, "2026-08-27")
+
+        self.assertEqual(page.count('href="https://example.com/"'), 1)
 
 
 if __name__ == "__main__":

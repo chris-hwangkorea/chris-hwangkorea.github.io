@@ -56,6 +56,13 @@ def render_link_groups(groups):
     return "".join(output)
 
 
+def render_primary_links(project):
+    links = project.get("links", [])
+    if not links and project.get("linkGroups"):
+        return ""
+    return f'<div class="links">{render_links(links)}</div>'
+
+
 def render_page(config, projects, updated):
     cards = []
     for project in projects:
@@ -65,7 +72,7 @@ def render_page(config, projects, updated):
     <h2>{html.escape(project["name"])}</h2><span class="status {status.lower()}">{html.escape(status)}</span></div>
   <p class="description">{html.escape(project["description"])}</p>
   <p class="path">~/Desktop/projects/{html.escape(project["folder"])}</p>
-  <div class="links">{render_links(project.get("links", []))}</div>
+  {render_primary_links(project)}
   <div class="link-groups">{render_link_groups(project.get("linkGroups", []))}</div>
 </article>''')
 
