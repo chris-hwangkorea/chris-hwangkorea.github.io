@@ -39,6 +39,16 @@
       ]
     },
     {
+      "folder": "art-card-studio",
+      "name": "Art Card Studio",
+      "description": "그림 사진과 문장을 참고 디자인 스타일의 카드뉴스로 만드는 무료 웹앱",
+      "status": "LIVE",
+      "links": [
+        {"label": "카드 만들기", "url": "https://art-card-studio.vercel.app", "primary": true},
+        {"label": "템플릿 관리", "url": "https://art-card-studio.vercel.app/admin"}
+      ]
+    },
+    {
       "folder": "chris-hwangkorea.github.io",
       "name": "전자책 라이브러리",
       "description": "전자책 목록과 파일을 관리하는 개인 라이브러리",
