@@ -41,7 +41,7 @@
     {
       "folder": "art-card-studio",
       "name": "Art Card Studio",
-      "description": "그림 방향 조절·문장 사진 OCR과 참고 디자인 스타일로 카드뉴스를 만드는 무료 웹앱",
+      "description": "참고 디자인의 실제 배경·장식을 유지하며 그림과 문장을 교체하는 무료 카드뉴스 웹앱",
       "status": "LIVE",
       "links": [
         {"label": "카드 만들기", "url": "https://art-card-studio.vercel.app", "primary": true},
