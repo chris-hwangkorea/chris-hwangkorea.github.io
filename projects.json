@@ -41,7 +41,7 @@
     {
       "folder": "art-card-studio",
       "name": "Art Card Studio",
-      "description": "참고 디자인의 실제 배경·장식을 유지하며 그림과 문장을 교체하는 무료 카드뉴스 웹앱",
+      "description": "책 양면 작품 자동보정과 참고 디자인의 실제 배경·장식을 유지하는 무료 카드뉴스 웹앱",
       "status": "LIVE",
       "links": [
         {"label": "카드 만들기", "url": "https://art-card-studio.vercel.app", "primary": true},
