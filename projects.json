@@ -41,21 +41,24 @@
     {
       "folder": "art-card-studio",
       "name": "Art Card Studio",
-      "description": "작품 배경 자동 제거, 브러시 정밀 보정, 위치·크기 조절과 참고 오버레이를 지원하는 무료 카드뉴스 웹앱",
+      "description": "V1 기존 제작기와 V2 의미 레이어 기반 정밀 템플릿 제작실을 함께 관리하는 통합 프로젝트",
       "status": "LIVE",
-      "links": [
-        {"label": "카드 만들기", "url": "https://art-card-studio.vercel.app", "primary": true},
-        {"label": "템플릿 관리", "url": "https://art-card-studio.vercel.app/admin"}
-      ]
-    },
-    {
-      "folder": "art-card-studio-v2",
-      "name": "Art Card Studio V2",
-      "description": "참고 디자인 1~4를 작품·제목·본문·서명 레이어로 분리해 정밀 편집하고 반복 사용하는 무료 디자인 스튜디오",
-      "status": "LIVE",
-      "links": [
-        {"label": "간편 제작기", "url": "https://art-card-studio-v2.vercel.app", "primary": true},
-        {"label": "템플릿 제작실", "url": "https://art-card-studio-v2.vercel.app/admin"}
+      "links": [],
+      "linkGroups": [
+        {
+          "label": "Version 1",
+          "links": [
+            {"label": "V1 카드 만들기", "url": "https://art-card-studio.vercel.app", "primary": true},
+            {"label": "V1 템플릿 관리", "url": "https://art-card-studio.vercel.app/admin"}
+          ]
+        },
+        {
+          "label": "Version 2",
+          "links": [
+            {"label": "V2 간편 제작기", "url": "https://art-card-studio-v2.vercel.app"},
+            {"label": "V2 템플릿 제작실", "url": "https://art-card-studio-v2.vercel.app/admin"}
+          ]
+        }
       ]
     },
     {
