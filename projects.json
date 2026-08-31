@@ -41,7 +41,7 @@
     {
       "folder": "art-card-studio",
       "name": "Art Card Studio",
-      "description": "작품 배경을 자동 제거하고 참고 이미지의 구도·손글씨·색감에 비정형 합성하는 무료 카드뉴스 웹앱",
+      "description": "작품 배경 자동 제거, 브러시 정밀 보정, 위치·크기 조절과 참고 오버레이를 지원하는 무료 카드뉴스 웹앱",
       "status": "LIVE",
       "links": [
         {"label": "카드 만들기", "url": "https://art-card-studio.vercel.app", "primary": true},
