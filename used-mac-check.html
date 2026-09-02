@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>중고 M1 Mac 현장 체크</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f3f4f6;color:#111827;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif}main{max-width:680px;margin:auto;padding:22px 16px 60px}h1{font-size:27px;margin:6px 0}p{color:#64748b;margin:5px 0 20px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:17px;margin:12px 0}h2{font-size:18px;margin:0 0 12px}.item{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-bottom:1px solid #eee}.item:last-child{border:0}.item input{width:22px;height:22px;flex:none;margin:0}.item label{font-size:16px;line-height:1.45}.danger{border-left:5px solid #dc2626}.danger strong{color:#b91c1c}.buttons{display:grid;grid-template-columns:1fr 1fr;gap:9px}.screen{border:0;border-radius:7px;padding:15px;font-size:16px;font-weight:700}.white{background:#fff;border:1px solid #bbb}.black{background:#111;color:#fff}.reset{width:100%;margin-top:15px;background:#e5e7eb;border:0;border-radius:7px;padding:13px;font-weight:700}.overlay{position:fixed;inset:0;z-index:99;display:none}.overlay button{position:absolute;right:18px;bottom:18px;padding:12px 17px;border:1px solid #aaa;border-radius:7px;background:#fff;font-weight:700}.small{font-size:13px;color:#64748b;line-height:1.5}
+  </style>
+</head>
+<body>
+<main>
+  <h1>중고 M1 Mac 현장 체크</h1>
+  <p>약 10분 · 모두 통과한 뒤 결제</p>
+  <section class="card">
+    <h2>0. 현장 준비</h2>
+    <div class="item"><input type="checkbox"><label>아이폰의 <b>개인용 핫스팟</b> 켜기</label></div>
+    <div class="item"><input type="checkbox"><label>핫스팟 암호와 충분한 아이폰 배터리 확인</label></div>
+    <p class="small">공용 Wi-Fi가 없어도 괜찮습니다. 핫스팟은 초기화 후 활성화 잠금과 원격 관리 여부를 확인하는 데 사용합니다.</p>
+  </section>
+  <section class="card">
+    <h2>1. 사양과 배터리</h2>
+    <div class="item"><input type="checkbox"><label> → 이 Mac에 관하여: <b>M1 · 메모리 16GB · 저장용량</b> 확인</label></div>
+    <div class="item"><input type="checkbox"><label>시스템 설정 → 배터리: 상태 <b>정상</b>, 최대 용량 확인</label></div>
+    <div class="item"><input type="checkbox"><label>Option 키를 누른 채  → 시스템 정보 → 전원: 사이클 수 확인</label></div>
+  </section>
+  <section class="card">
+    <h2>2. 화면·키보드·소리</h2>
+    <div class="buttons">
+      <button class="screen white" onclick="showScreen('#fff')">흰 화면 띄우기</button>
+      <button class="screen black" onclick="showScreen('#000')">검은 화면 띄우기</button>
+    </div>
+    <div class="item"><input type="checkbox"><label>화면 줄·얼룩·깜빡임·불량 화소 없음</label></div>
+    <div class="item"><input type="checkbox"><label>메모장에서 모든 키 입력, 트랙패드와 Touch ID 확인</label></div>
+    <div class="item"><input type="checkbox"><label>음악 재생, 웹캠, Wi-Fi, USB-C 포트와 충전 확인</label></div>
+  </section>
+  <section class="card">
+    <h2>3. Apple 진단</h2>
+    <div class="item"><input type="checkbox"><label>종료 → 전원 버튼 길게 → 시작 옵션 표시 → <b>Command + D</b></label></div>
+    <div class="item"><input type="checkbox"><label>진단 결과 오류 코드 없음</label></div>
+  </section>
+  <section class="card danger">
+    <h2>4. 결제 전 필수</h2>
+    <div class="item"><input type="checkbox"><label>판매자가 Apple 계정 로그아웃 및 나의 Mac 찾기 해제</label></div>
+    <div class="item"><input type="checkbox"><label>모든 콘텐츠 및 설정 지우기 완료</label></div>
+    <div class="item"><input type="checkbox"><label>초기 설정 화면에서 <b>아이폰 핫스팟</b> 연결</label></div>
+    <div class="item"><input type="checkbox"><label>인터넷 연결 후 이전 소유자 계정 요구 없음</label></div>
+    <div class="item"><input type="checkbox"><label><strong>원격 관리·회사·학교 등록 화면 없음</strong></label></div>
+    <p class="small">이전 소유자 암호나 원격 관리 화면이 나오면 결제하지 마세요.</p>
+  </section>
+  <section class="card">
+    <h2>현장에서는 하지 않기</h2>
+    <div class="item"><input type="checkbox"><label>macOS 대용량 업데이트는 집에서 진행</label></div>
+    <div class="item"><input type="checkbox"><label>기존 Mac 데이터 마이그레이션도 집에서 진행</label></div>
+    <p class="small">현장에서는 사양·배터리·하드웨어·잠금 여부만 확인하면 됩니다.</p>
+  </section>
+  <button class="reset" onclick="document.querySelectorAll('input').forEach(x=>x.checked=false)">체크 초기화</button>
+</main>
+<div id="overlay" class="overlay" onclick="this.style.display='none'"><button>닫기</button></div>
+<script>
+  function showScreen(color){const el=document.getElementById('overlay');el.style.background=color;el.style.display='block';if(el.requestFullscreen)el.requestFullscreen().catch(()=>{});}
+</script>
+</body>
+</html>
