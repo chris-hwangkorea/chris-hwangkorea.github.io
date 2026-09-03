@@ -71,6 +71,13 @@
       ]
     },
     {
+      "folder": "china-food-shortform-automation",
+      "name": "중국 음식 숏폼 자동편집",
+      "description": "행동·최종 도착 용기별 고정 앵글을 적용한 도우인·샤오홍슈 음식 영상 편집 기준과 골든 샘플",
+      "status": "DEV",
+      "links": []
+    },
+    {
       "folder": "mini-zine-maker",
       "name": "mini-zine-maker",
       "description": "8페이지 미니북 제작 웹앱",
