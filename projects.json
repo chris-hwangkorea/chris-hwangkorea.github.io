@@ -73,7 +73,7 @@
     {
       "folder": "china-food-shortform-automation",
       "name": "중국 음식 숏폼 자동편집",
-      "description": "행동·도착 용기별 타이트한 고정 앵글, 원인 행동 보존, 맛있는 색감과 음성 없는 ASMR 현장음 기준을 적용한 음식 숏폼 골든 샘플",
+      "description": "세로 촬영 원본의 냄비 중심 구도, 실제 조리 순서·원인 행동 보존, 완성 음식 첫 화면, 맛있는 색감과 선별 ASMR 현장음 기준을 적용한 음식 숏폼 자동편집",
       "status": "DEV",
       "links": []
     },
