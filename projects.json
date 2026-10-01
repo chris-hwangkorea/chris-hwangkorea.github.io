@@ -63,6 +63,15 @@
       ]
     },
     {
+      "folder": "art-content-maker-cn",
+      "name": "ART CONTENT MAKER CN",
+      "description": "전시 사진·리플렛을 분석해 검증 가능한 정보만으로 小红书·抖音 중국어 문안, 훅, 이중언어 자막과 SRT를 만드는 모바일 웹앱",
+      "status": "LIVE",
+      "links": [
+        {"label": "사이트", "url": "https://art-content-maker-cn.vercel.app", "primary": true}
+      ]
+    },
+    {
       "folder": "chris-hwangkorea.github.io",
       "name": "전자책 라이브러리",
       "description": "전자책 목록과 파일을 관리하는 개인 라이브러리",
