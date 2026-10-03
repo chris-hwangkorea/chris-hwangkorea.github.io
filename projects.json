@@ -90,7 +90,7 @@
     {
       "folder": "mini-zine-maker",
       "name": "mini-zine-maker",
-      "description": "사진 최대 8장 일괄 추가, 여백 없이 사진 직접 드래그·실시간 조절, A4 가로와 5mm 안전 여백을 자동 적용하는 접지용 JPG/PDF 미니북 제작 웹앱",
+      "description": "사진 최대 8장 일괄 추가, 자동 커버 없이 사진을 그대로 쓰는 Photo Zine, 직접 드래그·실시간 조절과 A4 안전 여백 출력을 지원하는 미니북 제작 웹앱",
       "status": "LIVE",
       "links": [
         {"label": "사이트", "url": "https://mini-zine-maker.vercel.app", "primary": true}
