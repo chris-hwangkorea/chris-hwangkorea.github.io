@@ -65,7 +65,7 @@
     {
       "folder": "art-content-maker-cn",
       "name": "ART CONTENT MAKER CN",
-      "description": "아이폰 전시 사진·리플렛·Live Photo를 안전하게 분석해 검증 가능한 정보만으로 小红书·抖音 중국어 문안, 글자수 제한, 훅, 이중언어 자막과 SRT를 제공하는 모바일 웹앱",
+      "description": "아이폰 전시 사진·리플렛·Live Photo를 분석하고 채널 반응 데이터에 맞춘 小红书·抖音 중국어 문안, 글자수 제한, 훅, 이중언어 자막과 SRT를 제공하는 모바일 웹앱",
       "status": "LIVE",
       "links": [
         {"label": "사이트", "url": "https://art-content-maker-cn.vercel.app", "primary": true}
