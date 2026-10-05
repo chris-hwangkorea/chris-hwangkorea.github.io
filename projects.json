@@ -90,7 +90,7 @@
     {
       "folder": "mini-zine-maker",
       "name": "mini-zine-maker",
-      "description": "8·16페이지와 아코디언북의 세로·가로형, 사진 일괄 업로드·드래그·분할·맞쪽 펼침·자유 텍스트, 16페이지 4mm 인쇄 안전영역과 종이 기준 고정 접기선, 시각 접기 안내를 제공하는 웹앱",
+      "description": "8페이지 미니북과 8·16면 아코디언북의 세로·가로형, 사진 일괄 업로드·드래그·분할·맞쪽 펼침·자유 텍스트, 16페이지 4×4 지그재그 배열과 4mm 인쇄 안전영역, 시각 접기 안내를 제공하는 웹앱",
       "status": "LIVE",
       "links": [
         {"label": "사이트", "url": "https://mini-zine-maker.vercel.app", "primary": true}
