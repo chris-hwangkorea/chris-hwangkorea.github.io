@@ -90,7 +90,7 @@
     {
       "folder": "mini-zine-maker",
       "name": "mini-zine-maker",
-      "description": "8·16페이지와 아코디언북 모두 세로·가로형을 선택하고, 실제 맞쪽 묶음 편집 화면에서 기존 사진을 삭제하지 않고 자동 이동하며 한 장·분할·맞쪽 펼침과 자유 텍스트를 배치하는 웹앱",
+      "description": "8·16페이지와 아코디언북의 세로·가로형을 지원하고, 드래그 사진 위치 조정·분할·실제 맞쪽 펼침·자유 텍스트·정확한 100% 인쇄판과 16페이지 시각 접기 안내를 제공하는 웹앱",
       "status": "LIVE",
       "links": [
         {"label": "사이트", "url": "https://mini-zine-maker.vercel.app", "primary": true}
