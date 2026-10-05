@@ -90,7 +90,7 @@
     {
       "folder": "mini-zine-maker",
       "name": "mini-zine-maker",
-      "description": "사진 8장·16장을 실제 책 순서로 자동 배치하고, 사진 직접 드래그와 여러 자유 텍스트를 편집해 A4 단면 JPG·100% 인쇄용 PDF로 출력하는 웹앱",
+      "description": "8·16페이지와 아코디언북에 한 장·상하·좌우 분할·실제 맞쪽 펼침 사진과 자유 텍스트를 배치해 A4 JPG·PDF로 출력하는 웹앱",
       "status": "LIVE",
       "links": [
         {"label": "사이트", "url": "https://mini-zine-maker.vercel.app", "primary": true}
