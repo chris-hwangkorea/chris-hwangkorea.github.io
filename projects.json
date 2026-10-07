@@ -90,7 +90,7 @@
     {
       "folder": "mini-zine-maker",
       "name": "mini-zine-maker",
-      "description": "8페이지 미니북과 8·16면 아코디언북, 동일 크기 사진 8장 개별 재단형을 지원하며, A4 100% 인쇄를 위한 5mm 프린터 안전 여백과 세로·가로 출력 및 상세 제작 안내를 제공하는 인쇄 웹앱",
+      "description": "8페이지 미니북과 8·16면 아코디언북, 동일 크기 사진 8장 개별 재단형을 지원하며, PDF 드라이버 자동 축소를 피하는 A4 100% 직접 인쇄와 세로·가로 출력 및 상세 제작 안내를 제공하는 인쇄 웹앱",
       "status": "LIVE",
       "links": [
         {"label": "사이트", "url": "https://mini-zine-maker.vercel.app", "primary": true}
