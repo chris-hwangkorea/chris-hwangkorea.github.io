@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>무료 웹 Photo AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>.notice p{margin-bottom:10px}.colab{display:block;text-align:center;background:#f59e0b;color:#17120a;text-decoration:none;font-weight:800;border-radius:9px;padding:9px;margin-bottom:8px}.notice input{width:100%;border:1px solid #6658a4;background:#11131a;color:white;border-radius:8px;padding:9px;font-size:11px}.notice>small{display:block;margin-top:6px;color:#aaa2ca}</style>
+</head>
+<body>
+  <header><div class="brand"><b>F</b><span><strong>Free Web Photo AI</strong><small>설치 없이 고품질 사진 복원</small></span></div><em>무료 Colab GPU</em></header>
+  <main>
+    <section class="workspace">
+      <div id="drop" class="drop"><span>＋</span><h1>사진을 선택하세요</h1><p>JPG · PNG · WebP · 최대 20MB</p><button id="choose" class="primary">사진 선택</button><input id="file" type="file" accept="image/jpeg,image/png,image/webp" hidden></div>
+      <div id="compare" class="compare hidden">
+        <img id="before" alt="원본"><div id="resultClip" class="result-clip"><img id="after" alt="결과"></div>
+        <input id="split" type="range" min="0" max="100" value="50" aria-label="전후 비교">
+        <label class="before-label">원본</label><label class="after-label">결과</label>
+        <button id="original" class="floating">누르는 동안 원본</button><button id="zoom" class="floating zoom">100% 확대</button>
+      </div>
+      <div class="status"><span id="status">사진을 선택하면 시작합니다</span><progress id="progress" value="0" max="1"></progress></div>
+    </section>
+    <aside>
+      <div class="notice"><strong>1. 무료 AI 서버 켜기</strong><p>Google Colab에서 ▶ 한 번만 누른 뒤 마지막에 표시되는 주소를 아래에 붙여 넣으세요. 사진은 실행 중인 Colab 서버로만 업로드됩니다.</p><a id="colab" class="colab" href="https://colab.research.google.com/github/chris-hwangkorea/chris-hwangkorea.github.io/blob/main/free-photo-ai/free-photo-ai.ipynb" target="_blank" rel="noopener">Colab 열기</a><input id="endpoint" type="url" placeholder="https://…gradio.live 주소 붙여넣기" autocomplete="off"><small id="connection">서버 주소가 필요합니다</small></div>
+      <label class="toggle"><span><strong>AUTO Enhance</strong><small>색·대비·디테일 자동 복원</small></span><input id="auto" type="checkbox" checked><i></i></label>
+      <label class="toggle"><span><strong>Denoise</strong><small>강한 노이즈 제거</small></span><input id="denoise" type="checkbox"><i></i></label>
+      <label class="toggle"><span><strong>Sharpen</strong><small>디테일 복원</small></span><input id="sharpen" type="checkbox"><i></i></label>
+      <label class="toggle"><span><strong>Face Restore</strong><small>얼굴 영역 디테일 강화</small></span><input id="face" type="checkbox"><i></i></label>
+      <label class="toggle"><span><strong>오래된 사진 복원</strong><small>손상·퇴색 복원</small></span><input id="oldPhoto" type="checkbox"><i></i></label>
+      <div class="scale"><strong>출력 크기</strong><div><button data-scale="1" class="active">원본</button><button data-scale="2">2×</button><button data-scale="4">4×</button></div></div>
+      <button id="run" class="primary wide" disabled>무료 웹 AI 처리</button><button id="save" class="secondary wide" disabled>결과 저장</button>
+      <p id="stages" class="stages"></p>
+    </aside>
+  </main>
+  <script src="api.js"></script><script src="ui.js"></script>
+</body>
+</html>
