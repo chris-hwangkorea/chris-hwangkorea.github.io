@@ -99,9 +99,11 @@
     {
       "folder": "무료-Topaz-대체-프로그램",
       "name": "무료 Topaz 대체 프로그램",
-      "description": "M1 Mac에서 사진을 외부로 전송하지 않고 AUTO Enhance, 2x/4x 확대, 노이즈 제거, 선명화, 얼굴·오래된 사진 복원, 전후 비교와 일괄 처리를 제공하는 무료 로컬 앱",
-      "status": "DEV",
-      "links": []
+      "description": "Google Colab 무료 GPU로 AUTO Enhance, AI 2x/4x 확대, 노이즈 제거, 선명화, 얼굴·오래된 사진 복원과 원본/결과 확대 비교를 제공하는 무료 웹앱",
+      "status": "LIVE",
+      "links": [
+        {"label": "웹앱", "url": "https://chris-hwangkorea.github.io/free-photo-ai/", "primary": true}
+      ]
     },
     {
       "folder": "seoul-workshop-app",
