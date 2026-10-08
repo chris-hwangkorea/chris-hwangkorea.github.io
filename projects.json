@@ -102,7 +102,7 @@
       "description": "Google Colab 무료 GPU로 AUTO Enhance, AI 2x/4x 확대, 노이즈 제거, 선명화, 얼굴·오래된 사진 복원과 원본/결과 확대 비교를 제공하는 무료 웹앱",
       "status": "LIVE",
       "links": [
-        {"label": "웹앱", "url": "https://chris-hwangkorea.github.io/free-photo-ai/", "primary": true}
+        {"label": "웹앱", "url": "https://chris-hwang-free-photo-ai.static.hf.space/", "primary": true}
       ]
     },
     {
