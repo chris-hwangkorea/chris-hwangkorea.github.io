@@ -9,6 +9,7 @@
   h1   { font-size: 1.4em; margin-bottom: 4px; }
   .meta { color: #888; font-size: .85em; margin-bottom: 12px; }
   .badge { display:inline-block; background:#eee; border-radius:12px; padding:3px 10px; margin:2px; font-size:.8em; }
+  .manage { float:right; display:inline-block; background:#167b55; color:#fff; text-decoration:none; border-radius:7px; padding:8px 12px; font-size:.82em; font-weight:700; }
   input { width:100%; padding:8px; margin:12px 0; border:1px solid #ddd; border-radius:8px; font-size:1em; }
   table { width:100%; border-collapse:collapse; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.08); }
   th    { background:#333; color:#fff; padding:10px 12px; text-align:left; font-size:.85em; }
@@ -17,8 +18,9 @@
 </style>
 </head>
 <body>
+<a class="manage" href="http://127.0.0.1:4174" target="_blank" rel="noopener">책 관리</a>
 <h1>📚 전자책 라이브러리</h1>
-<div class="meta">총 <b>236권</b> · 업데이트: 2026-10-07 01:18</div>
+<div class="meta">총 <b>236권</b> · 업데이트: 2026-10-09 16:59</div>
 <div><span class="badge">AI <b>18</b></span><span class="badge">주식책 <b>29</b></span><span class="badge">만화 <b>7</b></span><span class="badge">사진집 <b>2</b></span><span class="badge">소설 <b>37</b></span><span class="badge">자기계발 <b>35</b></span><span class="badge">경제 <b>26</b></span><span class="badge">역사 <b>24</b></span><span class="badge">과학 <b>18</b></span><span class="badge">철학 <b>32</b></span><span class="badge">기타 <b>8</b></span></div>
 <input type="text" id="q" placeholder="제목 검색..." oninput="filterBooks()">
 <table id="tbl">
