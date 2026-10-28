@@ -72,6 +72,13 @@
       ]
     },
     {
+      "folder": "bomber-pizza-direct-order",
+      "name": "봄버피자 다이렉트 주문 시스템",
+      "description": "당근·전단지 QR 유입 고객을 위한 iOS·Android 모바일 선결제 주문과 OKPOS 주문·매출 자동 반영을 목표로 하는 프로젝트",
+      "status": "DEV",
+      "links": []
+    },
+    {
       "folder": "chris-hwangkorea.github.io",
       "name": "전자책 라이브러리",
       "description": "전자책 목록과 파일을 관리하는 개인 라이브러리",
