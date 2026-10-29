@@ -74,7 +74,7 @@
     {
       "folder": "자체주문웹앱개발",
       "name": "봄버피자 삼송원흥점 다이렉트 주문 시스템",
-      "description": "당근·전단지 QR 유입 고객용 모바일 PWA로 공식 메뉴 15종, 장바구니·무료품목, 통합 관리자와 카카오 간편 로그인을 구성하고 Vercel에 배포했으며 결제·OKPOS 연동을 준비 중인 프로젝트",
+      "description": "당근·전단지 QR 유입 고객용 모바일 PWA로 공식 메뉴 15종, 장바구니·무료품목, 통합 관리자와 카카오·네이버·Google 소셜 로그인 시작 API를 구성해 Vercel에 배포했으며 결제·OKPOS 연동을 준비 중인 프로젝트",
       "status": "LIVE",
       "links": [
         {"label": "주문 웹앱", "url": "https://bomber-pizza-samsong-wonheung.vercel.app", "primary": true}
